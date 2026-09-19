@@ -48,9 +48,12 @@ LABEL_ALIASES = {
                           "timemanipulation", "timestamp", "tm"],
     "unchecked_low_level_calls": ["unchecked low level calls",
                                   "unchecked_low_level_calls",
-                                  "unchecked calls", "unchecked_calls", "uc"],
+                                  "unchecked calls", "unchecked_calls",
+                                  "unchecked return values",
+                                  "unchecked_return_values", "uc"],
 }
-ADDR_ALIASES = ["contractaddress", "contract_address", "address", "addr"]
+ADDR_ALIASES = ["contractaddress", "contract_address", "address", "addr",
+                "contractid", "contract_id"]
 
 MIN_POSITIVES_TO_REPORT = 1000  # below this, do not report the class separately
 
