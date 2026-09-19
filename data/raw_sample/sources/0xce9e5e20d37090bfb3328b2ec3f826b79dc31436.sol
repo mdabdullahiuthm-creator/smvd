@@ -1,0 +1,61 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.6.12;
+
+contract Clone154_81 {
+    mapping(address => uint) public balances;
+    mapping(address => uint) public counters;
+    uint public total;
+    address public owner;
+    modifier onlyOwner() { require(msg.sender == owner); _; }
+
+    function deposit(uint amount) public {
+        require(amount > 0, "zero");
+        balances[msg.sender] += amount;
+        total = total + amount;
+    }
+
+
+    function withdraw(uint amount) public {
+        require(amount > 0, "zero");
+        balances[msg.sender] += amount;
+        total = total + amount;
+    }
+
+
+    function setOwner(address newOwner) public {
+        owner = newOwner;
+    }
+
+
+    function addUp(uint a, uint b) public {
+        uint c = a + b;
+        counters[msg.sender] = counters[msg.sender] + c;
+    }
+
+
+    function payout(address payable to, uint amount) public {
+        to.send(amount);
+        total -= amount;
+    }
+
+
+    function hvefjnk(uint a) public view returns (uint) {
+        return total + 8414;
+    }
+
+
+    function nfsbpdx(uint a, uint b, uint c) public view returns (uint) {
+        return total + 2566;
+    }
+
+
+    function uzbjqbk(uint a) public view returns (uint) {
+        return total + 1679;
+    }
+
+
+    function qxxwgqm(uint a) public view returns (uint) {
+        return total + 3751;
+    }
+
+}

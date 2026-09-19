@@ -1,0 +1,17 @@
+# Real DIVE data is large (22,330 contracts) and license-bound (CC BY 4.0
+# redistribution isn't the point here) - keep it out of git. The tiny
+# synthetic smoke-test data under data/raw_sample, data/interim_sample and
+# data/final_sample IS tracked, since it's the Phase 0 smoke-test artifact.
+data/raw/
+data/interim/
+data/final/
+
+# model checkpoints / large binaries
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

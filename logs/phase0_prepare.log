@@ -1,0 +1,6 @@
+[prepare] labels from dive_labels_final.csv  (400 rows)
+[prepare] 400 .sol files indexed
+[prepare] funnel: {'labelled': 400, 'kept': 400}
+[prepare] duplicate families...
+  400 contracts -> 338 families (62 collapsed)
+[prepare] wrote 400 records -> data/interim_sample/contracts.jsonl

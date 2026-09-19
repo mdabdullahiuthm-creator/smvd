@@ -1,0 +1,19 @@
+
+=== DIVE-G5 composition (paste into Table I) ===
+split  contracts  reentrancy  access_control  arithmetic  time_manipulation  unchecked_low_level_calls
+train        280          78              98          73                 67                         73
+  val         60          17              19          13                 12                         14
+ test         60          16              19          14                 13                         14
+
+=== class check ===
+  reentrancy                      111  TOO FEW - drop or merge
+  access_control                  136  TOO FEW - drop or merge
+  arithmetic                      100  TOO FEW - drop or merge
+  time_manipulation                92  TOO FEW - drop or merge
+  unchecked_low_level_calls       101  TOO FEW - drop or merge
+
+  Your confusion matrices must sum to 60, not to the corpus size.
+
+  graph: nodes mean 8.2 median 8 max 12 | edges mean 31.0
+  vulnerable contracts: 321 / 400 (80.2%)
+  Dataset-2 upper bound (train+val true positives): ~278 pairs
